@@ -1,10 +1,418 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
   <head>
-    <link href="css/styles.css" rel="stylesheet" />
+    <link href="/styles/styles.css" rel="stylesheet" />
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,400;0,600;0,700;0,800;1,400&display=swap"
+      rel="stylesheet"
+    />
+    <title>Game Hub</title>
   </head>
   <body>
-    <h1>Hello world</h1>
-    <p>This is my first website woop</p>
+    <header>
+      <a href="index.html">
+        <img id="logo" src="/images/GameHub_Logo.png" alt="logo-nav" />
+      </a>
+      <nav>
+        <ul class="nav-links">
+          <li><a href="#">Home</a></li>
+          <li><a href="#">Games</a></li>
+          <li><a href="#">Sell now</a></li>
+          <li><a href="#">Contact</a></li>
+        </ul>
+      </nav>
+      <a href="#">
+        <img id="search-icon" src="/images/icons/search.png" alt="" />
+      </a>
+      <a href="#">
+        <img id="shopping-icon" src="/images/icons/shopping-cart.png" alt="" />
+      </a>
+      <a href="#">
+        <img id="profile-icon" src="/images/icons/profile.png" alt="" />
+      </a>
+    </header>
+
+    <section class="hero">
+      <img class="homelogo" src="/images/GameHub_Logo.png" alt="" />
+      <h1>
+        Purchase, pre-order and sell computer games.<br />
+        Game hub is a competitibvlty priced website <br />
+        with a huge ranged of games.
+      </h1>
+      <div class="container">
+        <button class="button button1">LOGIN</button>
+        <button class="button button2">SIGN UP</button>
+      </div>
+    </section>
+
+    <section class="highlighted-games">
+      <h2 class="highlighted"><span class="line"><</span> HIGHLIGHTED GAMES</h2>
+      <img
+        class="highlighted-img"
+        src="/images/Games/Cyberpunk.jpg"
+        alt="Cyberpunk"
+      />
+      <div class="highlighted-info">
+        <div class="hightlighted-game-text">
+          <h2>
+            <a href="#"> Cyberpunk 2077</a>
+          </h2>
+          <p>Standard Edtion</p>
+          <p>PC</p>
+        </div>
+        <div class="price-container">
+          <div class="discount">
+            <p>-11%</p>
+          </div>
+          <p class="prices-info">
+            <span class="prev-price">89.99$</span>
+            <span class="current-price">80.09$</span>
+          </p>
+        </div>
+        <div class="container-btn">
+          <button class="pre-purchase">
+            <img id="shopping" src="/images/icons/shopping-cart.png" alt="" />
+            PRE-PURCHASE
+          </button>
+        </div>
+      </div>
+
+      <div class="container-gamenav">
+        <div class="circle circle1"></div>
+        <div class="circle circle2"></div>
+        <div class="circle circle3"></div>
+        <div class="circle circle4"></div>
+        <div class="circle circle5"></div>
+      </div>
+    </section>
+
+    <main>
+      <section class="featured-games">
+        <h2 class="featured">
+          <span class="line"><</span> FEATURED & RECOMMENDED
+        </h2>
+
+        <div class="games-container">
+          <div class="container-games">
+            <div class="game">
+              <img src="/images/Games/Fall guys.jpg" alt="Fall guys" />
+            </div>
+            <div class="box-info">
+              <p>-13%</p>
+              <div class="spanbox">
+                <span class="prev-featured">23.68$</span>
+                <span class="current-featured">20.37$</span>
+              </div>
+              <img id="steam" src="/images/icons/steamlogo.png" alt="" />
+            </div>
+            <div class="buttonbox">
+              <button class="boxgame1">
+                <img
+                  id="shopping"
+                  src="/images/icons/shopping-cart.png"
+                  alt=""
+                />ADD TO CART
+              </button>
+            </div>
+          </div>
+
+          <div class="container-games">
+            <div class="game">
+              <img src="/images/Games/assasin.jpg" alt="assasins creed" />
+            </div>
+            <div class="box-info">
+              <p>-13%</p>
+              <div class="spanbox">
+                <span class="prev-featured">23.68$</span>
+                <span class="current-featured">20.37$</span>
+              </div>
+              <img id="steam" src="/images/icons/steamlogo.png" alt="" />
+            </div>
+            <div class="buttonbox">
+              <button class="boxgame1">
+                <img
+                  id="shopping"
+                  src="/images/icons/shopping-cart.png"
+                  alt=""
+                />ADD TO CART
+              </button>
+            </div>
+          </div>
+
+          <div class="container-games">
+            <div class="game">
+              <img src="/images/Games/counterstike.png" alt="Counterstrike" />
+            </div>
+            <div class="box-info">
+              <p>-13%</p>
+              <div class="spanbox">
+                <span class="prev-featured">23.68$</span>
+                <span class="current-featured">20.37$</span>
+              </div>
+              <img id="steam" src="/images/icons/steamlogo.png" alt="" />
+            </div>
+            <div class="buttonbox">
+              <button class="boxgame1">
+                <img
+                  id="shopping"
+                  src="/images/icons/shopping-cart.png"
+                  alt=""
+                />ADD TO CART
+              </button>
+            </div>
+          </div>
+
+          <div class="container-games">
+            <div class="game">
+              <img src="/images/Games/wow.jpg" alt="world of warcraft" />
+            </div>
+            <div class="box-info">
+              <p>-13%</p>
+              <div class="spanbox">
+                <span class="prev-featured">23.68$</span>
+                <span class="current-featured">20.37$</span>
+              </div>
+              <img id="steam" src="/images/icons/steamlogo.png" alt="" />
+            </div>
+            <div class="buttonbox">
+              <button class="boxgame1">
+                <img
+                  id="shopping"
+                  src="/images/icons/shopping-cart.png"
+                  alt=""
+                />ADD TO CART
+              </button>
+            </div>
+          </div>
+
+          <div class="container-games">
+            <div class="game">
+              <img src="/images/Games/minecraft.png" alt="minecraft" />
+            </div>
+            <div class="box-info">
+              <p>-13%</p>
+              <div class="spanbox">
+                <span class="prev-featured">23.68$</span>
+                <span class="current-featured">20.37$</span>
+              </div>
+              <img id="steam" src="/images/icons/steamlogo.png" alt="" />
+            </div>
+            <div class="buttonbox">
+              <button class="boxgame1">
+                <img
+                  id="shopping"
+                  src="/images/icons/shopping-cart.png"
+                  alt=""
+                />ADD TO CART
+              </button>
+            </div>
+          </div>
+
+          <div class="container-games">
+            <div class="game">
+              <img src="/images/Games/fornite.jpg" alt="Fornite" />
+            </div>
+            <div class="box-info">
+              <p>-13%</p>
+              <div class="spanbox">
+                <span class="prev-featured">23.68$</span>
+                <span class="current-featured">20.37$</span>
+              </div>
+              <img id="steam" src="/images/icons/steamlogo.png" alt="" />
+            </div>
+            <div class="buttonbox">
+              <button class="boxgame1">
+                <img
+                  id="shopping"
+                  src="/images/icons/shopping-cart.png"
+                  alt=""
+                />ADD TO CART
+              </button>
+            </div>
+          </div>
+
+          <div class="container-games">
+            <div class="game">
+              <img src="/images/Games/witcher.png" alt="Witcher" />
+            </div>
+            <div class="box-info">
+              <p>-13%</p>
+              <div class="spanbox">
+                <span class="prev-featured">23.68$</span>
+                <span class="current-featured">20.37$</span>
+              </div>
+              <img id="steam" src="/images/icons/steamlogo.png" alt="" />
+            </div>
+            <div class="buttonbox">
+              <button class="boxgame1">
+                <img
+                  id="shopping"
+                  src="/images/icons/shopping-cart.png"
+                  alt=""
+                />ADD TO CART
+              </button>
+            </div>
+          </div>
+
+          <div class="container-games">
+            <div class="game">
+              <img src="/images/Games/cod.jpg" alt="modern warfare" />
+            </div>
+            <div class="box-info">
+              <p>-13%</p>
+              <div class="spanbox">
+                <span class="prev-featured">23.68$</span>
+                <span class="current-featured">20.37$</span>
+              </div>
+              <img id="steam" src="/images/icons/steamlogo.png" alt="" />
+            </div>
+            <div class="buttonbox">
+              <button class="boxgame1">
+                <img
+                  id="shopping"
+                  src="/images/icons/shopping-cart.png"
+                  alt=""
+                />ADD TO CART
+              </button>
+            </div>
+          </div>
+
+          <div class="container-games">
+            <div class="game">
+              <img src="/images/Games/gta.jpg" alt="grand theft auto" />
+            </div>
+            <div class="box-info">
+              <p>-13%</p>
+              <div class="spanbox">
+                <span class="prev-featured">23.68$</span>
+                <span class="current-featured">20.37$</span>
+              </div>
+              <img id="steam" src="/images/icons/steamlogo.png" alt="" />
+            </div>
+            <div class="buttonbox">
+              <button class="boxgame1">
+                <img
+                  id="shopping"
+                  src="/images/icons/shopping-cart.png"
+                  alt=""
+                />ADD TO CART
+              </button>
+            </div>
+          </div>
+
+          <div class="container-games">
+            <div class="game">
+              <img src="/images/Games/pubg.jpg" alt="pubg" />
+            </div>
+            <div class="box-info">
+              <p>-13%</p>
+              <div class="spanbox">
+                <span class="prev-featured">23.68$</span>
+                <span class="current-featured">20.37$</span>
+              </div>
+              <img id="steam" src="/images/icons/steamlogo.png" alt="" />
+            </div>
+            <div class="buttonbox">
+              <button class="boxgame1">
+                <img
+                  id="shopping"
+                  src="/images/icons/shopping-cart.png"
+                  alt=""
+                />ADD TO CART
+              </button>
+            </div>
+          </div>
+
+          <div class="container-games">
+            <div class="game">
+              <img src="/images/Games/dota.jpg" alt="dota2" />
+            </div>
+            <div class="box-info">
+              <p>-13%</p>
+              <div class="spanbox">
+                <span class="prev-featured">23.68$</span>
+                <span class="current-featured">20.37$</span>
+              </div>
+              <img id="steam" src="/images/icons/steamlogo.png" alt="" />
+            </div>
+            <div class="buttonbox">
+              <button class="boxgame1">
+                <img
+                  id="shopping"
+                  src="/images/icons/shopping-cart.png"
+                  alt=""
+                />ADD TO CART
+              </button>
+            </div>
+          </div>
+
+          <div class="container-games">
+            <div class="game">
+              <img src="/images/Games/apex.jpg" alt="Apex" />
+            </div>
+            <div class="box-info">
+              <p>-13%</p>
+              <div class="spanbox">
+                <span class="prev-featured">23.68$</span>
+                <span class="current-featured">20.37$</span>
+              </div>
+              <img id="steam" src="/images/icons/steamlogo.png" alt="" />
+            </div>
+            <div class="buttonbox">
+              <button class="boxgame1">
+                <img
+                  id="shopping"
+                  src="/images/icons/shopping-cart.png"
+                  alt=""
+                />ADD TO CART
+              </button>
+            </div>
+          </div>
+        </div>
+
+        <div class="container-gamenav">
+          <div class="circle circle1"></div>
+          <div class="circle circle2"></div>
+          <div class="circle circle3"></div>
+          <div class="circle circle4"></div>
+          <div class="circle circle5"></div>
+        </div>
+      </section>
+
+      <section class="coming-soon">
+        <h2 class="coming"><span class="line"><</span> COMING SOON</h2>
+        <div class="container-coming-games">
+          <div class="container-games">
+            <div class="game">
+              <img src="/images/Games/Fall guys.jpg" alt="Fall guys" />
+            </div>
+            <div class="box-info">
+              <p>-13%</p>
+              <div class="spanbox">
+                <span class="prev-featured">23.68$</span>
+                <span class="current-featured">20.37$</span>
+              </div>
+              <img id="steam" src="/images/icons/steamlogo.png" alt="" />
+            </div>
+            <div class="buttonbox">
+              <button class="boxgame1">
+                <img
+                  id="shopping"
+                  src="/images/icons/shopping-cart.png"
+                  alt=""
+                />ADD TO CART
+              </button>
+            </div>
+          </div>
+
+          </div>
+        </div>
+      </section>
+    </main>
+    <footer>
+      <h2>about</h2>
+    </footer>
   </body>
 </html>
