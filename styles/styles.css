@@ -67,13 +67,14 @@ header {
   margin: 0 40px;
 }
 
-/* Main section */
+/* Main PAGE */
 
 .hero {
   min-height: 90vh;
-  background: url("/images/pexels-soumil-kumar-735911.jpg");
+  background: url("/images/background.jpg");
   background-size: cover;
   background-position: center;
+  background-attachment: fixed;
   display: flex;
   color: white;
   flex-direction: column;
@@ -85,6 +86,14 @@ header {
   font-size: 2.3rem;
   text-align: center;
   margin: 1rem;
+  text-shadow: 2px 2px #000000;
+}
+
+.overlay-hero {
+  background: rgba(0, 0, 0, 0.3);
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 
 .homelogo {
@@ -140,6 +149,18 @@ header {
   align-items: center;
 }
 
+.highlighted-games-img {
+  width: 100%;
+  height: 60vh;
+  background-image: url(/images/Games/Cyberpunk.jpg);
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  background-size: cover;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-end;
+}
+
 .highlighted-games-text {
   display: flex;
 }
@@ -156,12 +177,11 @@ header {
   object-fit: cover;
 }
 
-.highlighted-info {
-  background: linear-gradient(#1e2a2e, #000000);
+.highlighted-overlay {
+  background: rgba(0, 0, 0, 0.9);
   display: flex;
   justify-content: center;
   align-items: center;
-  margin-top: -0.5rem;
   flex-wrap: wrap;
 }
 
