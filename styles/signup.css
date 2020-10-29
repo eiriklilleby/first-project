@@ -1,0 +1,84 @@
+/* GLOBAL STYLES */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Poppins", sans-serif;
+}
+
+body {
+  background: linear-gradient(#26a9ad, #176f8f);
+}
+
+html {
+  font-size: 62.5%;
+}
+
+a,
+li {
+  color: white;
+  text-decoration: none;
+  list-style: none;
+  font-size: 1.5rem;
+  letter-spacing: 0.3rem;
+}
+
+/* NAV SECTION */
+
+#logo {
+  margin: 8px 0;
+  width: 12rem;
+  cursor: pointer;
+}
+
+header {
+  min-height: 10vh;
+  background: linear-gradient(#1e2a2e, #000000);
+  display: flex;
+  align-items: center;
+  padding: 0px 5%;
+  position: sticky;
+  top: 0px;
+  z-index: 3;
+}
+
+.nav-container {
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+}
+
+.nav-links li {
+  display: inline-block;
+  padding: 0 35px;
+  margin-left: 7rem;
+}
+
+.nav-icon {
+  width: 2.5rem;
+  margin: auto;
+}
+
+label {
+  margin: 0 40px 0 0;
+  display: none;
+}
+
+#toggle {
+  display: none;
+}
+
+/* SIGN UP MAIN PAGE STYLES */
+
+section {
+  min-height: 90vh;
+}
+
+.signup-container {
+  display: flex;
+  border: 2px solid white;
+  height: 50rem;
+  width: 50rem;
+  margin: auto;
+  margin-top: 15rem;
+}

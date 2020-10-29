@@ -8,40 +8,53 @@
       href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,400;0,600;0,700;0,800;1,400&display=swap"
       rel="stylesheet"
     />
+    <link
+      rel="stylesheet"
+      href="https://use.fontawesome.com/releases/v5.15.1/css/all.css"
+      integrity="sha384-vp86vTRFVJgpjF9jiIGPEEqYqlDwgyBgEF109VFjmqGmIY/Y4HV4d3Gp2irVfcrp"
+      crossorigin="anonymous"
+    />
     <title>Game Hub</title>
   </head>
+
   <body>
     <header>
       <a href="index.html">
         <img id="logo" src="/images/GameHub_Logo.png" alt="logo-nav" />
       </a>
-      <nav>
-        <ul class="nav-links">
-          <li><a href="#">Home</a></li>
-          <li><a href="#">Games</a></li>
-          <li><a href="#">Sell now</a></li>
-          <li><a href="#">Contact</a></li>
-        </ul>
-      </nav>
-      <a href="#">
-        <img id="search-icon" src="/images/icons/search.png" alt="" />
-      </a>
-      <a href="#">
-        <img id="shopping-icon" src="/images/icons/shopping-cart.png" alt="" />
-      </a>
-      <a href="#">
-        <img id="profile-icon" src="/images/icons/profile.png" alt="" />
-      </a>
+      <div class="nav-container">
+        <nav>
+          <ul class="nav-links">
+            <li><a href="#">Home</a></li>
+            <li><a href="#">Games</a></li>
+            <li><a href="#">Sell now</a></li>
+            <li><a href="#">Contact</a></li>
+          </ul>
+        </nav>
+        <a href="#">
+          <img class="nav-icon" src="/images/icons/search.png" alt="" />
+        </a>
+        <a href="#">
+          <img class="nav-icon" src="/images/icons/shopping-cart.png" alt="" />
+        </a>
+        <a href="#">
+          <img class="nav-icon" src="/images/icons/profile.png" alt="" />
+        </a>
+        <label for="toggle"
+          ><i class="fas fa-bars" style="font-size: 20px; color: white"></i
+        ></label>
+        <input type="checkbox" id="toggle" />
+      </div>
     </header>
 
     <section class="hero">
       <img class="homelogo" src="/images/GameHub_Logo.png" alt="" />
       <div class="overlay-hero">
-      <h1>
-        Purchase, pre-order and sell computer games.<br />
-        Game hub is a competitibvlty priced website <br />
-        with a huge ranged of games.
-      </h1>
+        <h1>
+          Purchase, pre-order and sell computer games.<br />
+          Game hub is a competitibvlty priced website <br />
+          with a huge ranged of games.
+        </h1>
       </div>
       <div class="container">
         <button class="button button1">LOGIN</button>
@@ -51,34 +64,33 @@
 
     <section class="highlighted-games">
       <h2 class="highlighted"><span class="line"><</span> HIGHLIGHTED GAMES</h2>
-      
-     <div class="highlighted-games-img">
-      <div class="highlighted-overlay">
-        <div class="hightlighted-game-text">
-          <h2>
-            <a href="#"> Cyberpunk 2077</a>
-          </h2>
-          <p>Standard Edtion</p>
-          <p>PC</p>
-        </div>
-        <div class="price-container">
-          <div class="discount">
-            <p>-11%</p>
+
+      <div class="highlighted-games-img">
+        <div class="highlighted-overlay">
+          <div class="highlighted-game-text">
+            <h2>
+              <a href="#">Cyberpunk 2077</a>
+            </h2>
+            <p>Standard Edtion</p>
+            <p>PC</p>
           </div>
-          <p class="prices-info">
-            <span class="prev-price">89.99$</span>
-            <span class="current-price">80.09$</span>
-          </p>
-        </div>
-        <div class="container-btn">
-          <button class="pre-purchase">
-            <img id="shopping" src="/images/icons/shopping-cart.png" alt="" />
-            PRE-PURCHASE
-          </button>
+          <div class="price-container">
+            <div class="discount">
+              <p>-11%</p>
+            </div>
+            <p class="prices-info">
+              <span class="prev-price">89.99$</span>
+              <span class="current-price">80.09$</span>
+            </p>
+          </div>
+          <div class="container-btn">
+            <button class="pre-purchase">
+              <img id="shopping" src="/images/icons/shopping-cart.png" alt="" />
+              PRE-PURCHASE
+            </button>
+          </div>
         </div>
       </div>
-      </div>
-      
 
       <div class="container-gamenav">
         <div class="circle circle1"></div>
@@ -384,18 +396,26 @@
 
       <section class="coming-soon">
         <h2 class="coming"><span class="line"><</span> COMING SOON</h2>
+
         <div class="container-coming-games">
           <div class="container-games">
             <div class="game">
-              <img src="/images/Games/Fall guys.jpg" alt="Fall guys" />
+              <img
+                src="/images/Games/coming soon/cold war.jpg"
+                alt="Call of duty cold war"
+              />
             </div>
             <div class="box-info">
-              <p>-13%</p>
+              <p>-10%</p>
               <div class="spanbox">
-                <span class="prev-featured">23.68$</span>
-                <span class="current-featured">20.37$</span>
+                <span class="prev-featured">89.99$</span>
+                <span class="current-featured">80.99$</span>
               </div>
-              <img id="steam" src="/images/icons/steamlogo.png" alt="" />
+              <img
+                id="steam"
+                src="/images/icons/battlenet.png"
+                alt="battenet logo"
+              />
             </div>
             <div class="buttonbox">
               <button class="boxgame1">
@@ -403,17 +423,856 @@
                   id="shopping"
                   src="/images/icons/shopping-cart.png"
                   alt=""
-                />ADD TO CART
+                />PRE-ORDER NOW
               </button>
             </div>
           </div>
 
+          <div class="container-games">
+            <div class="game">
+              <img
+                src="/images/Games/coming soon/fifa21.png"
+                alt="Call of duty cold war"
+              />
+            </div>
+            <div class="box-info">
+              <p>-10%</p>
+              <div class="spanbox">
+                <span class="prev-featured">89.99$</span>
+                <span class="current-featured">80.99$</span>
+              </div>
+              <img
+                id="steam"
+                src="/images/icons/battlenet.png"
+                alt="battenet logo"
+              />
+            </div>
+            <div class="buttonbox">
+              <button class="boxgame1">
+                <img
+                  id="shopping"
+                  src="/images/icons/shopping-cart.png"
+                  alt=""
+                />PRE-ORDER NOW
+              </button>
+            </div>
+          </div>
+
+          <div class="container-games">
+            <div class="game">
+              <img
+                src="/images/Games/coming soon/stormground.png"
+                alt="Call of duty cold war"
+              />
+            </div>
+            <div class="box-info">
+              <p>-10%</p>
+              <div class="spanbox">
+                <span class="prev-featured">89.99$</span>
+                <span class="current-featured">80.99$</span>
+              </div>
+              <img
+                id="steam"
+                src="/images/icons/battlenet.png"
+                alt="battenet logo"
+              />
+            </div>
+            <div class="buttonbox">
+              <button class="boxgame1">
+                <img
+                  id="shopping"
+                  src="/images/icons/shopping-cart.png"
+                  alt=""
+                />PRE-ORDER NOW
+              </button>
+            </div>
+          </div>
+
+          <div class="container-games">
+            <div class="game">
+              <img
+                src="/images/Games/coming soon/pes21.jpg"
+                alt="Call of duty cold war"
+              />
+            </div>
+            <div class="box-info">
+              <p>-10%</p>
+              <div class="spanbox">
+                <span class="prev-featured">89.99$</span>
+                <span class="current-featured">80.99$</span>
+              </div>
+              <img
+                id="steam"
+                src="/images/icons/battlenet.png"
+                alt="battenet logo"
+              />
+            </div>
+            <div class="buttonbox">
+              <button class="boxgame1">
+                <img
+                  id="shopping"
+                  src="/images/icons/shopping-cart.png"
+                  alt=""
+                />PRE-ORDER NOW
+              </button>
+            </div>
+          </div>
+
+          <div class="container-games">
+            <div class="game">
+              <img
+                src="/images/Games/coming soon/hero_dirt5.jpg"
+                alt="Call of duty cold war"
+              />
+            </div>
+            <div class="box-info">
+              <p>-10%</p>
+              <div class="spanbox">
+                <span class="prev-featured">89.99$</span>
+                <span class="current-featured">80.99$</span>
+              </div>
+              <img
+                id="steam"
+                src="/images/icons/battlenet.png"
+                alt="battenet logo"
+              />
+            </div>
+            <div class="buttonbox">
+              <button class="boxgame1">
+                <img
+                  id="shopping"
+                  src="/images/icons/shopping-cart.png"
+                  alt=""
+                />PRE-ORDER NOW
+              </button>
+            </div>
+          </div>
+
+          <div class="container-games">
+            <div class="game">
+              <img
+                src="/images/Games/coming soon/SPACEBASE-STARTOPIA.jpg"
+                alt="Call of duty cold war"
+              />
+            </div>
+            <div class="box-info">
+              <p>-10%</p>
+              <div class="spanbox">
+                <span class="prev-featured">89.99$</span>
+                <span class="current-featured">80.99$</span>
+              </div>
+              <img
+                id="steam"
+                src="/images/icons/battlenet.png"
+                alt="battenet logo"
+              />
+            </div>
+            <div class="buttonbox">
+              <button class="boxgame1">
+                <img
+                  id="shopping"
+                  src="/images/icons/shopping-cart.png"
+                  alt=""
+                />PRE-ORDER NOW
+              </button>
+            </div>
+          </div>
+
+          <div class="container-games">
+            <div class="game">
+              <img
+                src="/images/Games/coming soon/horizon.jpg"
+                alt="Call of duty cold war"
+              />
+            </div>
+            <div class="box-info">
+              <p>-10%</p>
+              <div class="spanbox">
+                <span class="prev-featured">89.99$</span>
+                <span class="current-featured">80.99$</span>
+              </div>
+              <img
+                id="steam"
+                src="/images/icons/battlenet.png"
+                alt="battenet logo"
+              />
+            </div>
+            <div class="buttonbox">
+              <button class="boxgame1">
+                <img
+                  id="shopping"
+                  src="/images/icons/shopping-cart.png"
+                  alt=""
+                />PRE-ORDER NOW
+              </button>
+            </div>
+          </div>
+
+          <div class="container-games">
+            <div class="game">
+              <img
+                src="/images/Games/coming soon/cyberpunk2077.jpg"
+                alt="Call of duty cold war"
+              />
+            </div>
+            <div class="box-info">
+              <p>-10%</p>
+              <div class="spanbox">
+                <span class="prev-featured">89.99$</span>
+                <span class="current-featured">80.99$</span>
+              </div>
+              <img
+                id="steam"
+                src="/images/icons/battlenet.png"
+                alt="battenet logo"
+              />
+            </div>
+            <div class="buttonbox">
+              <button class="boxgame1">
+                <img
+                  id="shopping"
+                  src="/images/icons/shopping-cart.png"
+                  alt=""
+                />PRE-ORDER NOW
+              </button>
+            </div>
+          </div>
+        </div>
+
+        <div class="container-gamenav">
+          <div class="circle circle1"></div>
+          <div class="circle circle2"></div>
+          <div class="circle circle3"></div>
+          <div class="circle circle4"></div>
+          <div class="circle circle5"></div>
+        </div>
+      </section>
+
+      <section class="bestseller-wishlisted">
+        <div class="container-best-wish">
+          <div class="container-best">
+            <h2 class="best-text"><span class="line"><</span> BESTSELLERS</h2>
+
+            <div class="container-long">
+              <div class="small-box-best">
+                <p>1</p>
+              </div>
+              <div class="small-game-box">
+                <a href="#">
+                  <img
+                    src="/images/Games/bestsellers/1.jpg"
+                    alt="The outer worlds"
+                  />
+                </a>
+              </div>
+              <div class="container-game-info">
+                <div class="game-name">
+                  <a href="#">
+                    <p>The Outer Worlds Expansion Pass <br />Expansion Pass</p>
+                  </a>
+                </div>
+                <div class="game-price">
+                  <span class="prev-featured">24.99$</span>
+                  <span class="current-featured">21.24$</span>
+                </div>
+                <div class="game-discount">
+                  <p>-15%</p>
+                </div>
+              </div>
+            </div>
+
+            <div class="container-long">
+              <div class="small-box-best">
+                <p>2</p>
+              </div>
+              <div class="small-game-box">
+                <a href="#">
+                  <img src="/images/Games/bestsellers/2.jpg" alt="Rocksmith" />
+                </a>
+              </div>
+              <div class="container-game-info">
+                <div class="game-name">
+                  <a href="#">
+                    <p>Rocksmith</p>
+                  </a>
+                </div>
+                <div class="game-price">
+                  <span class="prev-featured">24.99$</span>
+                  <span class="current-featured">21.24$</span>
+                </div>
+                <div class="game-discount">
+                  <p>-15%</p>
+                </div>
+              </div>
+            </div>
+
+            <div class="container-long">
+              <div class="small-box-best">
+                <p>3</p>
+              </div>
+              <div class="small-game-box">
+                <a href="#">
+                  <img
+                    src="/images/Games/bestsellers/3.jpg"
+                    alt="Crusader kings 3"
+                  />
+                </a>
+              </div>
+              <div class="container-game-info">
+                <div class="game-name">
+                  <a href="#">
+                    <p>Crusader Kings 3 <br />Standard Edition</p>
+                  </a>
+                </div>
+                <div class="game-price">
+                  <span class="prev-featured">24.99$</span>
+                  <span class="current-featured">21.24$</span>
+                </div>
+                <div class="game-discount">
+                  <p>-15%</p>
+                </div>
+              </div>
+            </div>
+
+            <div class="container-long">
+              <div class="small-box-best">
+                <p>4</p>
+              </div>
+              <div class="small-game-box">
+                <a href="#">
+                  <img
+                    src="/images/Games/bestsellers/4.jpeg"
+                    alt="Crusader kings royal"
+                  />
+                </a>
+              </div>
+              <div class="container-game-info">
+                <div class="game-name">
+                  <a href="#">
+                    <p>Crusader Kings 3 <br />Royal Edition</p>
+                  </a>
+                </div>
+                <div class="game-price">
+                  <span class="prev-featured">24.99$</span>
+                  <span class="current-featured">21.24$</span>
+                </div>
+                <div class="game-discount">
+                  <p>-15%</p>
+                </div>
+              </div>
+            </div>
+
+            <div class="container-long">
+              <div class="small-box-best">
+                <p>5</p>
+              </div>
+              <div class="small-game-box">
+                <a href="#">
+                  <img
+                    src="/images/Games/bestsellers/5.jpg"
+                    alt="Marvel avengers"
+                  />
+                </a>
+              </div>
+              <div class="container-game-info">
+                <div class="game-name">
+                  <a href="#">
+                    <p>Marvel's Avengers <br />Standard Edition</p>
+                  </a>
+                </div>
+                <div class="game-price">
+                  <span class="prev-featured">24.99$</span>
+                  <span class="current-featured">21.24$</span>
+                </div>
+                <div class="game-discount">
+                  <p>-15%</p>
+                </div>
+              </div>
+            </div>
+
+            <div class="container-long">
+              <div class="small-box-best">
+                <p>6</p>
+              </div>
+              <div class="small-game-box">
+                <a href="#">
+                  <img
+                    src="/images/Games/cold war.jpg"
+                    alt="Call of duty cold war"
+                  />
+                </a>
+              </div>
+              <div class="container-game-info">
+                <div class="game-name">
+                  <a href="#">
+                    <p>
+                      Call of Duty: Black Ops Cold War <br />Standard Edition
+                    </p>
+                  </a>
+                </div>
+                <div class="game-price">
+                  <span class="prev-featured">24.99$</span>
+                  <span class="current-featured">21.24$</span>
+                </div>
+                <div class="game-discount">
+                  <p>-15%</p>
+                </div>
+              </div>
+            </div>
+
+            <div class="container-long">
+              <div class="small-box-best">
+                <p>7</p>
+              </div>
+              <div class="small-game-box">
+                <a href="#">
+                  <img
+                    src="/images/Games/coming soon/fifa21.png"
+                    alt="FIFA 21"
+                  />
+                </a>
+              </div>
+              <div class="container-game-info">
+                <div class="game-name">
+                  <a href="#">
+                    <p>FIFA 21 <br />Standard Edition</p>
+                  </a>
+                </div>
+                <div class="game-price">
+                  <span class="prev-featured">24.99$</span>
+                  <span class="current-featured">21.24$</span>
+                </div>
+                <div class="game-discount">
+                  <p>-15%</p>
+                </div>
+              </div>
+            </div>
+
+            <div class="container-long">
+              <div class="small-box-best">
+                <p>8</p>
+              </div>
+              <div class="small-game-box">
+                <a href="#">
+                  <img
+                    src="/images/Games/bestsellers/8.jpg"
+                    alt="Borderlands 3"
+                  />
+                </a>
+              </div>
+              <div class="container-game-info">
+                <div class="game-name">
+                  <a href="#">
+                    <p>
+                      Borderlands 3 Super Deluxe Edition <br />Super Deluxe
+                      Edition
+                    </p>
+                  </a>
+                </div>
+                <div class="game-price">
+                  <span class="prev-featured">24.99$</span>
+                  <span class="current-featured">21.24$</span>
+                </div>
+                <div class="game-discount">
+                  <p>-15%</p>
+                </div>
+              </div>
+            </div>
+
+            <div class="container-long">
+              <div class="small-box-best">
+                <p>9</p>
+              </div>
+              <div class="small-game-box">
+                <a href="#">
+                  <img
+                    src="/images/Games/bestsellers/9.jpg"
+                    alt="The outer worlds"
+                  />
+                </a>
+              </div>
+              <div class="container-game-info">
+                <div class="game-name">
+                  <a href="#">
+                    <p>The Outer Worlds: Peril on Gorgon</p>
+                  </a>
+                </div>
+                <div class="game-price">
+                  <span class="prev-featured">24.99$</span>
+                  <span class="current-featured">21.24$</span>
+                </div>
+                <div class="game-discount">
+                  <p>-15%</p>
+                </div>
+              </div>
+            </div>
+
+            <div class="container-long">
+              <div class="small-box-best">
+                <p>10</p>
+              </div>
+              <div class="small-game-box">
+                <a href="#">
+                  <img
+                    src="/images/Games/bestsellers/10.jpg"
+                    alt="Assasin's creed odyssey"
+                  />
+                </a>
+              </div>
+              <div class="container-game-info">
+                <div class="game-name">
+                  <a href="#">
+                    <p>
+                      Assasin's Creed Odyssey Gold Edtion <br />Gold Edition
+                    </p>
+                  </a>
+                </div>
+                <div class="game-price">
+                  <span class="prev-featured">24.99$</span>
+                  <span class="current-featured">21.24$</span>
+                </div>
+                <div class="game-discount">
+                  <p>-15%</p>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div class="container-wish">
+            <h2 class="best-text">
+              <span class="line2"><</span> MOST WISHLISTED
+            </h2>
+
+            <div class="container-long">
+              <div class="small-box-wish">
+                <p>1</p>
+              </div>
+              <div class="small-game-box">
+                <a href="#">
+                  <img
+                    src="/images/Games/wishlist/w1.jpg"
+                    alt="Kingdoms of Amalur"
+                  />
+                </a>
+              </div>
+              <div class="container-game-info">
+                <div class="game-name">
+                  <a href="#">
+                    <p>Kingsdoms of Amalur <br />Standard Edition</p>
+                  </a>
+                </div>
+                <div class="game-price">
+                  <span class="prev-featured">24.99$</span>
+                  <span class="current-featured">21.24$</span>
+                </div>
+                <div class="game-discount">
+                  <p>-15%</p>
+                </div>
+              </div>
+            </div>
+
+            <div class="container-long">
+              <div class="small-box-wish">
+                <p>2</p>
+              </div>
+              <div class="small-game-box">
+                <a href="#">
+                  <img src="/images/Games/wishlist/w2.jpg" alt="Control" />
+                </a>
+              </div>
+              <div class="container-game-info">
+                <div class="game-name">
+                  <a href="#">
+                    <p>
+                      Control Ultimate Edition <br />Ultimate Edition(Steam)
+                    </p>
+                  </a>
+                </div>
+                <div class="game-price">
+                  <span class="prev-featured">24.99$</span>
+                  <span class="current-featured">21.24$</span>
+                </div>
+                <div class="game-discount">
+                  <p>-15%</p>
+                </div>
+              </div>
+            </div>
+
+            <div class="container-long">
+              <div class="small-box-wish">
+                <p>3</p>
+              </div>
+              <div class="small-game-box">
+                <a href="#">
+                  <img src="/images/Games/wishlist/w3.jpg" alt="Mafia" />
+                </a>
+              </div>
+              <div class="container-game-info">
+                <div class="game-name">
+                  <a href="#">
+                    <p>Mafia: Definitive Edition</p>
+                  </a>
+                </div>
+                <div class="game-price">
+                  <span class="prev-featured">24.99$</span>
+                  <span class="current-featured">21.24$</span>
+                </div>
+                <div class="game-discount">
+                  <p>-15%</p>
+                </div>
+              </div>
+            </div>
+
+            <div class="container-long">
+              <div class="small-box-wish">
+                <p>4</p>
+              </div>
+              <div class="small-game-box">
+                <a href="#">
+                  <img src="/images/Games/wishlist/w4.jpg" alt="Little hope" />
+                </a>
+              </div>
+              <div class="container-game-info">
+                <div class="game-name">
+                  <a href="#">
+                    <p>The Dark Pictures Anthology: <br />Little Hope</p>
+                  </a>
+                </div>
+                <div class="game-price">
+                  <span class="prev-featured">24.99$</span>
+                  <span class="current-featured">21.24$</span>
+                </div>
+                <div class="game-discount">
+                  <p>-15%</p>
+                </div>
+              </div>
+            </div>
+
+            <div class="container-long">
+              <div class="small-box-wish">
+                <p>5</p>
+              </div>
+              <div class="small-game-box">
+                <a href="#">
+                  <img
+                    src="/images/Games/wishlist/w5.jpg"
+                    alt="Death Stranding"
+                  />
+                </a>
+              </div>
+              <div class="container-game-info">
+                <div class="game-name">
+                  <a href="#">
+                    <p>Death Stranding</p>
+                  </a>
+                </div>
+                <div class="game-price">
+                  <span class="prev-featured">24.99$</span>
+                  <span class="current-featured">21.24$</span>
+                </div>
+                <div class="game-discount">
+                  <p>-15%</p>
+                </div>
+              </div>
+            </div>
+
+            <div class="container-long">
+              <div class="small-box-wish">
+                <p>6</p>
+              </div>
+              <div class="small-game-box">
+                <a href="#">
+                  <img
+                    src="/images/Games/wishlist/w6.jpg"
+                    alt="Black ops ultimate"
+                  />
+                </a>
+              </div>
+              <div class="container-game-info">
+                <div class="game-name">
+                  <a href="#">
+                    <p>Call of Duty Black Ops Cold War <br />Ultimate</p>
+                  </a>
+                </div>
+                <div class="game-price">
+                  <span class="prev-featured">24.99$</span>
+                  <span class="current-featured">21.24$</span>
+                </div>
+                <div class="game-discount">
+                  <p>-15%</p>
+                </div>
+              </div>
+            </div>
+
+            <div class="container-long">
+              <div class="small-box-wish">
+                <p>7</p>
+              </div>
+              <div class="small-game-box">
+                <a href="#">
+                  <img
+                    src="/images/Games/cold war.jpg"
+                    alt="Black ops standard"
+                  />
+                </a>
+              </div>
+              <div class="container-game-info">
+                <div class="game-name">
+                  <a href="#">
+                    <p>Call of Duty Black Ops Cold War <br />Standard</p>
+                  </a>
+                </div>
+                <div class="game-price">
+                  <span class="prev-featured">24.99$</span>
+                  <span class="current-featured">21.24$</span>
+                </div>
+                <div class="game-discount">
+                  <p>-15%</p>
+                </div>
+              </div>
+            </div>
+
+            <div class="container-long">
+              <div class="small-box-wish">
+                <p>8</p>
+              </div>
+              <div class="small-game-box">
+                <a href="#">
+                  <img src="/images/Games/wishlist/w8.jpg" alt="Wastland 3" />
+                </a>
+              </div>
+              <div class="container-game-info">
+                <div class="game-name">
+                  <a href="#">
+                    <p>Wasteland 3</p>
+                  </a>
+                </div>
+                <div class="game-price">
+                  <span class="prev-featured">24.99$</span>
+                  <span class="current-featured">21.24$</span>
+                </div>
+                <div class="game-discount">
+                  <p>-15%</p>
+                </div>
+              </div>
+            </div>
+
+            <div class="container-long">
+              <div class="small-box-wish">
+                <p>9</p>
+              </div>
+              <div class="small-game-box">
+                <a href="#">
+                  <img src="/images/Games/wishlist/w9.jpg" alt="Sekrio" />
+                </a>
+              </div>
+              <div class="container-game-info">
+                <div class="game-name">
+                  <a href="#">
+                    <p>Sekrio: Shadow Die Twice</p>
+                  </a>
+                </div>
+                <div class="game-price">
+                  <span class="prev-featured">24.99$</span>
+                  <span class="current-featured">21.24$</span>
+                </div>
+                <div class="game-discount">
+                  <p>-15%</p>
+                </div>
+              </div>
+            </div>
+
+            <div class="container-long">
+              <div class="small-box-wish">
+                <p>10</p>
+              </div>
+              <div class="small-game-box">
+                <a href="#">
+                  <img src="/images/Games/wishlist/w10.jpg" alt="Necromunda" />
+                </a>
+              </div>
+              <div class="container-game-info">
+                <div class="game-name">
+                  <a href="#">
+                    <p>Necromunda: Underhive Wars</p>
+                  </a>
+                </div>
+                <div class="game-price">
+                  <span class="prev-featured">24.99$</span>
+                  <span class="current-featured">21.24$</span>
+                </div>
+                <div class="game-discount">
+                  <p>-15%</p>
+                </div>
+              </div>
+            </div>
           </div>
         </div>
       </section>
     </main>
+
     <footer>
-      <h2>about</h2>
+      <div class="container-footer">
+        <div class="footer-text">
+          <h3>About</h3>
+          <p>About us</p>
+          <p>Careers</p>
+          <p>Corporate News</p>
+          <p>Refund Policy</p>
+          <p>Cookie Policy</p>
+          <p>Privacy Policy</p>
+          <p>Help & Support Portal</p>
+        </div>
+
+        <div class="footer-text">
+          <h3>Community</h3>
+          <p>Forum</p>
+          <p>Blog</p>
+          <p>Newsroom</p>
+          <p>Games Hub</p>
+          <p>Free to play</p>
+          <p>Game Hub Team</p>
+          <p>Redeem a Gift</p>
+        </div>
+
+        <div class="footer-text">
+          <h3>Information</h3>
+          <p>Developers Seeking Publishing</p>
+          <p>Publishers Seeking Retail Partners</p>
+          <p>Affiliate Partnerships</p>
+          <p>Student Discount</p>
+        </div>
+
+        <div class="footer-text">
+          <h3>Ways to pay</h3>
+          <img src="/images/Cards/visa-mastercard.jpg" alt="Visa card" />
+          <img src="/images/Cards/PayPal-Logo.jpg" alt="Pay Pal" />
+          <img src="/images/Cards/apple-pay.jpg" alt="Apple pay" />
+        </div>
+
+        <div class="footer-text">
+          <h3>Contact</h3>
+          <div class="contact">
+            <i
+              class="fas fa-envelope"
+              style="font-size: 20px; color: white"
+            ></i>
+            <p>Contact@gamehub.com</p>
+          </div>
+        </div>
+
+        <div class="footer-social">
+          <h3>Follow us</h3>
+          <i class="fab fa-facebook" style="font-size: 35px; color: white"></i>
+          <i class="fab fa-instagram" style="font-size: 35px; color: white"></i>
+          <i class="fab fa-twitch" style="font-size: 35px; color: white"></i>
+          <i class="fab fa-twitter" style="font-size: 35px; color: white"></i>
+          <i class="fab fa-youtube" style="font-size: 35px; color: white"></i>
+        </div>
+      </div>
+      <div class="copyright">
+        <p>&copy;2020 Eirik Lilleby All Rights Reserved</p>
+      </div>
     </footer>
   </body>
 </html>
