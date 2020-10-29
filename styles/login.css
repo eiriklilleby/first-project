@@ -132,7 +132,7 @@ section {
 
 button {
   width: 100%;
-  background: linear-gradient(#ba1f94, #880f6a);
+  background: linear-gradient(#0e46ce, #011337);
   padding: 1rem;
   font-size: 1.5rem;
   border-radius: 2rem;
@@ -146,7 +146,7 @@ button {
 
 button:hover {
   background: white;
-  color: #ba1f94;
+  color: #0e46ce;
 }
 
 hr {
