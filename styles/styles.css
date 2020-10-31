@@ -51,10 +51,8 @@ p {
 }
 
 header {
-  min-height: 10vh;
+  height: auto;
   background: linear-gradient(#1e2a2e, #000000);
-  display: flex;
-  align-items: center;
   padding: 0px 5%;
   position: sticky;
   top: 0px;
@@ -63,14 +61,17 @@ header {
 
 .nav-container {
   width: 100%;
+  height: auto;
   display: flex;
   justify-content: space-between;
+
+  flex-wrap: wrap;
+  align-items: center;
 }
 
-.nav-links li {
+nav li {
   display: inline-block;
-  padding: 0 35px;
-  margin-left: 7rem;
+  margin: 0 12rem 0 5rem;
 }
 
 .nav-icon {
@@ -78,13 +79,24 @@ header {
   margin: auto;
 }
 
-label {
-  margin: 0 40px 0 0;
-  display: none;
+header .search form {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
 }
 
-#toggle {
-  display: none;
+.search input[type="text"] {
+  padding: 1rem 1rem;
+  height: 40px;
+}
+
+.search button {
+  text-decoration: none;
+  color: white;
+  background: linear-gradient(#0e46ce, #011337);
+  padding: 0.7rem 1rem;
+  border: none;
+  height: 40px;
 }
 
 /* Main PAGE */
@@ -117,7 +129,7 @@ label {
 }
 
 .homelogo {
-  width: 50rem;
+  width: 40rem;
   margin-bottom: 3rem;
 }
 
@@ -162,7 +174,7 @@ label {
   color: #ba1f94;
 }
 
-/* HIGHLIGHTED GAMES SECTIOn */
+/* HIGHLIGHTED GAMES SECTION */
 
 .highlighted {
   padding: 10rem 0 3rem 1rem;
@@ -200,11 +212,12 @@ label {
 }
 
 .highlighted-overlay {
-  background: rgba(0, 0, 0, 0.9);
+  background: rgba(0, 0, 0, 0.6);
   display: flex;
   justify-content: center;
   align-items: center;
   flex-wrap: wrap;
+  height: auto;
 }
 
 .price-container {
@@ -542,26 +555,6 @@ footer {
 /* MEDIA QUERIES */
 
 @media screen and (max-width: 1315px) {
-  nav {
-    display: none;
-    width: 100%;
-    text-align: center;
-  }
-
-  .nav-links a {
-    display: block;
-    margin: 0;
-  }
-  .nav-icon {
-    display: none;
-  }
-  label {
-    display: block;
-    cursor: pointer;
-  }
-  #toggle:checked ~ nav {
-    display: block;
-  }
 }
 
 @media screen and (max-width: 980px) {

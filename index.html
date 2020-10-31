@@ -4,10 +4,13 @@
     <link href="/styles/styles.css" rel="stylesheet" />
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <! -- FONT ---------------------------------->
     <link
       href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,400;0,600;0,700;0,800;1,400&display=swap"
       rel="stylesheet"
     />
+    <! -- FONT AWESOME ---------------------------------->
     <link
       rel="stylesheet"
       href="https://use.fontawesome.com/releases/v5.15.1/css/all.css"
@@ -19,31 +22,36 @@
 
   <body>
     <header>
-      <a href="index.html">
+      
+      <div class="nav-container">
+        <a href="index.html">
         <img id="logo" src="/images/GameHub_Logo.png" alt="logo-nav" />
       </a>
-      <div class="nav-container">
         <nav>
-          <ul class="nav-links">
+          <ul>
             <li><a href="index.html">Home</a></li>
             <li><a href="#games">Games</a></li>
             <li><a href="profile.html">Sell now</a></li>
-            <li><a href="Contact">Contact</a></li>
+            <li><a href="#contact">Contact</a></li>
           </ul>
         </nav>
-        <a href="#">
-          <img class="nav-icon" src="/images/icons/search.png" alt="" />
-        </a>
+        
+       <div class="search">
+                    <form>
+                        <input type="text" name="search" id="search">
+                        <button type="submit"><i class="fas fa-search"></i></button>
+                    </form>
+                </div>
         <a href="checkout.html">
           <img class="nav-icon" src="/images/icons/shopping-cart.png" alt="" />
         </a>
         <a href="profile.html">
           <img class="nav-icon" src="/images/icons/profile.png" alt="" />
         </a>
-        <label for="toggle"><i class="fas fa-bars" style="font-size: 20px; color: white"></i></label>
-        <input type="checkbox" id="toggle" />
-      </div>
+        </div>
     </header>
+
+    <! -- Hero ---------------------------------->
 
     <section class="hero">
       <img class="homelogo" src="/images/GameHub_Logo.png" alt="" />
@@ -60,10 +68,12 @@
       </div>
     </section>
 
-    <section class="highlighted-games">
+    <! -- HIGLIGHTED GAMES ---------------------------------->
+
+   <a id="games"> <section class="highlighted-games"></a>
       <h2 class="highlighted"><span class="line"><</span> HIGHLIGHTED GAMES</h2>
 
-      <a id="games"><div class="highlighted-games-img"></a>
+      <div class="highlighted-games-img">
         <div class="highlighted-overlay">
           <div class="highlighted-game-text">
             <h2>
@@ -100,6 +110,8 @@
         <div class="circle circle5"></div>
       </div>
     </section>
+
+    <! -- FEATURED GAMES ---------------------------------->
 
     <main>
       <section class="featured-games">
@@ -368,6 +380,9 @@
         </div>
       </section>
 
+      <! -- COMING SOON ---------------------------------->
+
+
       <section class="coming-soon">
         <h2 class="coming"><span class="line"><</span> COMING SOON</h2>
 
@@ -543,6 +558,8 @@
           <div class="circle circle5"></div>
         </div>
       </section>
+
+      <! -- BESTSELLERS AND WISHLISTED GAMES ---------------------------------->
 
       <section class="bestseller-wishlisted">
         <div class="container-best-wish">
@@ -1057,7 +1074,9 @@
       </section>
     </main>
 
-    <footer>
+    <! -- FOOTER AND CONTACT PAGE ---------------------------------->
+
+    <a id="contact"><footer></a>
       <div class="container-footer">
         <div class="footer-text">
           <h3>About</h3>
