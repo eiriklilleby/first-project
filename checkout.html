@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <link href="/styles/checkout.css" rel="stylesheet" />
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,400;0,600;0,700;0,800;1,400&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      rel="stylesheet"
+      href="https://use.fontawesome.com/releases/v5.15.1/css/all.css"
+      integrity="sha384-vp86vTRFVJgpjF9jiIGPEEqYqlDwgyBgEF109VFjmqGmIY/Y4HV4d3Gp2irVfcrp"
+      crossorigin="anonymous"
+    />
+    <title>Game Hub | Check out</title>
+  </head>
+
+  <body>
+    <header>
+      <a href="index.html">
+        <img id="logo" src="/images/GameHub_Logo.png" alt="logo-nav" />
+      </a>
+      <div class="nav-container">
+        <nav>
+          <ul class="nav-links">
+            <li><a href="#">Home</a></li>
+            <li><a href="#">Games</a></li>
+            <li><a href="#">Sell now</a></li>
+            <li><a href="#">Contact</a></li>
+          </ul>
+        </nav>
+        <a href="#">
+          <img class="nav-icon" src="/images/icons/search.png" alt="Search" />
+        </a>
+        <a href="checkout.html">
+          <img
+            class="nav-icon"
+            src="/images/icons/shopping-cart.png"
+            alt="shopping cart"
+          />
+        </a>
+        <a href="profile.html">
+          <img
+            class="nav-icon"
+            src="/images/icons/profile.png"
+            alt="profile page"
+          />
+        </a>
+        <label for="toggle"
+          ><i class="fas fa-bars" style="font-size: 20px; color: white"></i
+        ></label>
+        <input type="checkbox" id="toggle" />
+      </div>
+    </header>
+
+    <section>
+      <div class="container-checkout">
+        <div class="details-container">
+          <div class="order-details">
+            <h2>YOUR ORDER DETAILS</h2>
+          </div>
+          <div class="order-games">
+            <div class="game-info">
+              <div class="game">
+                <img
+                  src="/images/Games/order details/fall guys cover.png"
+                  alt="fall guys"
+                />
+              </div>
+              <div class="game-title">
+                <h3>Fall guys Ultimate Knockout</h3>
+                <p>PC DOWNLOAD</p>
+              </div>
+              <div class="game-price">
+                <h3>20.37$</h3>
+                <i
+                  class="fas fa-trash"
+                  style="font-size: 18px; color: white"
+                ></i>
+              </div>
+            </div>
+            <hr />
+
+            <div class="game-info">
+              <div class="game">
+                <img
+                  src="/images/Games/order details/cold war cover.png"
+                  alt="Cold war"
+                />
+              </div>
+              <div class="game-title">
+                <h3>Call of Duty Cold War</h3>
+                <p>PC DOWNLOAD</p>
+              </div>
+              <div class="game-price">
+                <h3>80.99$</h3>
+                <i
+                  class="fas fa-trash"
+                  style="font-size: 18px; color: white"
+                ></i>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="summary-container">
+          <div class="order-summary">
+            <h2>ORDER SUMMARY</h2>
+          </div>
+          <div class="summary-info">
+            <h3>2 items in your cart</h3>
+            <h3>101.36$</h3>
+            <h3 class="text">Shipping Method <br />Download only</h3>
+            <hr />
+            <h3>SUBTOTAL:</h3>
+            <h3>101.36$</h3>
+          </div>
+          <div class="container-button">
+            <a href="checkoutsucess.html"
+              ><button>PROCEED TO CHECKOUT</button></a
+            >
+          </div>
+        </div>
+      </div>
+    </section>
+  </body>
+</html>
