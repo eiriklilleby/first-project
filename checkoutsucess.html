@@ -19,33 +19,41 @@
 
   <body>
     <header>
-      <a href="index.html">
-        <img id="logo" src="/images/GameHub_Logo.png" alt="logo-nav" />
-      </a>
       <div class="nav-container">
-        <nav>
-          <ul class="nav-links">
-            <li><a href="index.html">Home</a></li>
-            <li><a href="index.html">Games</a></li>
-            <li><a href="profile.html">Sell now</a></li>
-            <li><a href="index.html">Contact</a></li>
-          </ul>
-        </nav>
-        <a href="#">
-          <img class="nav-icon" src="/images/icons/search.png" alt="Search" />
+        <a href="index.html">
+          <img id="logo" src="/images/GameHub_Logo.png" alt="logo-nav" />
         </a>
-        <a href="/checkout.html">
-          <img class="nav-icon" src="/images/icons/shopping-cart.png" alt="Shopping Cart" />
+
+        <nav>
+          <label for="toggle">&#9776;</label>
+          <input type="checkbox" id="toggle" />
+          <div class="menu">
+            <ul>
+              <li><a href="index.html">Home</a></li>
+              <li><a href="index.html">Games</a></li>
+              <li><a href="profile.html">Sell now</a></li>
+              <li><a href="index.html">Contact</a></li>
+            </ul>
+          </div>
+        </nav>
+
+        <div class="search">
+          <form>
+            <input type="text" name="search" id="search" />
+            <button type="submit"><i class="fas fa-search"></i></button>
+          </form>
+        </div>
+        <a href="checkout.html">
+          <img class="nav-icon" src="/images/icons/shopping-cart.png" alt="" />
         </a>
         <a href="profile.html">
-          <img class="nav-icon" src="/images/icons/profile.png" alt="Profile Page" />
+          <img class="nav-icon" src="/images/icons/profile.png" alt="" />
         </a>
-        <label for="toggle"><i class="fas fa-bars" style="font-size: 20px; color: white"></i></label>
-        <input type="checkbox" id="toggle" />
       </div>
     </header>
+
     <section>
-      <i class="far fa-check-circle"></i>
+      <i id="circle" class="far fa-check-circle"></i>
       <h2>Thank you for your purchase!</h2>
       <div class="container-order">
         <div class="order-information">
@@ -70,7 +78,7 @@
         </div>
 
         <div class="container-button">
-          <a href="profile.html"> <button>DOWNLOAD NOW</button></a>
+          <a href="profile.html"> <button class="download-btn">DOWNLOAD NOW</button></a>
         </div>
       </div>
     </section>

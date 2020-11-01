@@ -64,14 +64,30 @@ header {
   height: auto;
   display: flex;
   justify-content: space-between;
-
-  flex-wrap: wrap;
   align-items: center;
 }
 
-nav li {
+.menu {
+  margin: 0 10px;
+  line-height: 70px;
+}
+
+.menu li {
+  margin: 0 50px;
+  line-height: 50px;
   display: inline-block;
-  margin: 0 12rem 0 5rem;
+}
+
+label {
+  font-size: 26px;
+
+  color: white;
+  width: 26px;
+  display: none;
+}
+
+#toggle {
+  display: none;
 }
 
 .nav-icon {
@@ -554,20 +570,91 @@ footer {
 
 /* MEDIA QUERIES */
 
-@media screen and (max-width: 1315px) {
-}
+/* NAV */
 
-@media screen and (max-width: 980px) {
-  .price-container {
-    margin: 0 21rem 0rem 0;
+@media screen and (max-width: 1380px) {
+  label {
+    display: block;
+    cursor: pointer;
+  }
+  .menu {
+    text-align: center;
+    width: 100%;
+    display: none;
+  }
+  .menu li {
+    display: block;
+  }
+  #toggle:checked + .menu {
+    display: block;
+  }
+  .nav-container {
+    flex-direction: column;
+  }
+  .nav-icon {
+    margin: 0.5rem 0rem;
+  }
+  .search input[type="text"] {
+    height: 25px;
+    margin-bottom: 0.5rem;
+  }
+  .search button {
+    height: 25px;
+    display: flex;
+    align-items: center;
+    margin-bottom: 0.6rem;
+  }
+  .nav-icon {
+    width: 2rem;
   }
 }
+
+/* HIGLIGHTED GAMES */
+
+@media screen and (max-width: 1140px) {
+  .highlighted-game-text h2 a {
+    font-size: 1.8rem;
+  }
+  .highlighted-game-text p {
+    font-size: 1.2rem;
+  }
+  .pre-purchase {
+    padding: 1.5rem 3rem;
+  }
+  .discount {
+    margin: 0rem 2rem 0 0rem;
+  }
+}
+
+@media screen and (max-width: 905px) {
+  .price-container {
+    margin: 0 2rem 0 5rem;
+  }
+  .discount {
+    padding: 0.5rem 1.5rem;
+  }
+  .curent-price {
+    font-size: 1rem;
+  }
+}
+
+/* FEATURED & COMING GAMES */
 
 @media screen and (max-width: 1700px) {
   .container-games {
     margin: 2rem 0rem;
   }
 }
+@media screen and (max-width: 1277px) {
+  .featured {
+    justify-content: center;
+  }
+  .coming {
+    justify-content: center;
+  }
+}
+
+/* BEST RATED WISHED GAMES */
 
 @media screen and (max-width: 1850px) {
   .container-best-wish {
