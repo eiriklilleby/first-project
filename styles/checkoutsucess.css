@@ -213,6 +213,8 @@ h2 {
 
 /* MEDIA QUIERIES */
 
+/* Nav */
+
 @media screen and (max-width: 1380px) {
   label {
     display: block;
@@ -247,5 +249,30 @@ h2 {
   }
   .nav-icon {
     width: 2rem;
+  }
+}
+
+/* CHCECKOUT SUCESS PAGE */
+
+@media screen and (max-width: 600px) {
+  #circle {
+    font-size: 80px;
+  }
+  h2 {
+    font-size: 1.8rem;
+  }
+  .container-order {
+    width: 450px;
+  }
+
+  .game {
+    width: 7rem;
+    height: 9rem;
+  }
+  .game-text {
+    width: 25rem;
+  }
+  .game-text h4 {
+    font-size: 1.5rem;
   }
 }
