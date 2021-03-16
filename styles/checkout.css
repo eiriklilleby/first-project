@@ -71,6 +71,7 @@ header {
 .menu {
   margin: 0 10px;
   line-height: 70px;
+  display: flex;
 }
 
 .menu li {
@@ -81,7 +82,6 @@ header {
 
 label {
   font-size: 26px;
-
   color: white;
   width: 26px;
   display: none;
@@ -100,6 +100,7 @@ header .search form {
   display: flex;
   flex-direction: row;
   align-items: center;
+  margin-top: 1.2rem;
 }
 
 .search input[type="text"] {
@@ -322,13 +323,21 @@ button:hover {
   label {
     display: block;
     cursor: pointer;
+    margin: auto;
   }
+
+  #logo {
+    width: 100px;
+    margin: auto;
+  }
+
   .menu {
     text-align: center;
     width: 100%;
     display: none;
   }
   .menu li {
+    margin: auto;
     display: block;
   }
   #toggle:checked + .menu {

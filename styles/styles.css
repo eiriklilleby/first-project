@@ -70,6 +70,7 @@ header {
 .menu {
   margin: 0 10px;
   line-height: 70px;
+  display: flex;
 }
 
 .menu li {
@@ -94,10 +95,11 @@ label {
   margin: auto;
 }
 
-header .search form {
+.search form {
   display: flex;
   flex-direction: row;
   align-items: center;
+  margin-top: 1.2rem;
 }
 
 .search input[type="text"] {
@@ -275,7 +277,7 @@ header .search form {
 }
 
 .pre-purchase:hover {
-  background: #ba1f94;
+  background: #0048ff;
 }
 
 .container-gamenav {
@@ -380,7 +382,7 @@ header .search form {
 }
 
 .boxgame1:hover {
-  background: #ba1f94;
+  background: #0048ff;
 }
 
 #shopping {
@@ -567,21 +569,31 @@ footer {
   label {
     display: block;
     cursor: pointer;
+    margin: auto;
   }
+
+  #logo {
+    width: 100px;
+    margin: auto;
+  }
+
   .menu {
     text-align: center;
-    width: 100%;
     display: none;
   }
+
   .menu li {
+    margin: auto;
     display: block;
   }
+
   #toggle:checked + .menu {
     display: block;
   }
   .nav-container {
     flex-direction: column;
   }
+
   .nav-icon {
     margin: 0.5rem 0rem;
   }
@@ -650,5 +662,15 @@ footer {
 @media screen and (max-width: 1850px) {
   .container-best-wish {
     justify-content: center;
+  }
+}
+
+@media screen and (max-width: 600px) {
+  .bestseller-wishlisted {
+    margin: auto;
+  }
+
+  html {
+    font-size: 50%;
   }
 }
