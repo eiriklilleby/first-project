@@ -63,6 +63,10 @@ header {
   display: flex;
 }
 
+.menu ul {
+  margin-right: 500px;
+}
+
 .menu li {
   margin: 0 50px;
   line-height: 50px;
@@ -191,6 +195,10 @@ button:hover {
   .menu {
     text-align: center;
     display: none;
+  }
+
+  .menu ul {
+    margin: auto;
   }
   .menu li {
     margin: auto;

@@ -84,6 +84,10 @@ header {
   display: inline-block;
 }
 
+.menu ul {
+  margin-right: 500px;
+}
+
 label {
   font-size: 26px;
   color: white;
@@ -292,6 +296,10 @@ span {
   .menu li {
     margin: auto;
     display: block;
+  }
+
+  .menu ul {
+    margin: auto;
   }
   #toggle:checked + .menu {
     display: block;

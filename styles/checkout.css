@@ -80,6 +80,10 @@ header {
   display: inline-block;
 }
 
+.menu ul {
+  margin-right: 500px;
+}
+
 label {
   font-size: 26px;
   color: white;
@@ -335,6 +339,10 @@ button:hover {
     text-align: center;
     width: 100%;
     display: none;
+  }
+
+  .menu ul {
+    margin: auto;
   }
   .menu li {
     margin: auto;

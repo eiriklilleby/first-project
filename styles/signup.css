@@ -59,6 +59,10 @@ header {
   display: flex;
 }
 
+.menu ul {
+  margin-right: 500px;
+}
+
 .menu li {
   margin: 0 50px;
   line-height: 50px;
@@ -204,6 +208,10 @@ hr {
   .menu li {
     margin: auto;
     display: block;
+  }
+
+  .menu ul {
+    margin: auto;
   }
   #toggle:checked + .menu {
     display: block;
