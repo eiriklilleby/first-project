@@ -220,7 +220,7 @@ h2 {
 
 /* Nav */
 
-@media screen and (max-width: 1380px) {
+@media screen and (max-width: 1700px) {
   label {
     display: block;
     cursor: pointer;

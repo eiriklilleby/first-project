@@ -16,17 +16,17 @@ function validateForm(event) {
     return false;
   }
 
-  if (checkLength(subject.value, 9) === true) {
-    subjectError.style.display = "none";
-  } else {
-    subjectError.style.display = "block";
-    return false;
-  }
-
   if (validateEmail(email.value) === true) {
     emailError.style.display = "none";
   } else {
     emailError.style.display = "block";
+    return false;
+  }
+
+  if (checkLength(subject.value, 9) === true) {
+    subjectError.style.display = "none";
+  } else {
+    subjectError.style.display = "block";
     return false;
   }
 

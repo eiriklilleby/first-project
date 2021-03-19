@@ -120,6 +120,10 @@ label {
   height: 40px;
 }
 
+.target {
+  font-weight: 700;
+}
+
 /* Main PAGE */
 
 .hero {
@@ -569,7 +573,7 @@ footer {
 
 /* NAV */
 
-@media screen and (max-width: 1380px) {
+@media screen and (max-width: 1700px) {
   label {
     display: block;
     cursor: pointer;

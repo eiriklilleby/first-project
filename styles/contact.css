@@ -114,6 +114,10 @@ header .search form {
   height: 40px;
 }
 
+.target {
+  font-weight: 700;
+}
+
 /* HEADER IN MAIN PAGE */
 
 .div-header {
@@ -139,17 +143,21 @@ section {
   width: 350px;
   margin: 5rem auto;
   text-align: center;
-  background: rgb(235, 229, 229);
+  background: linear-gradient(#0e46ce, #011337);
   border-radius: 2rem;
   font-size: 1.4rem;
 }
 
 input {
   width: 100%;
-  margin-top: 3px;
+  margin: 12px 0px;
   padding: 10px;
   font-size: 14px;
   border-radius: 2rem;
+}
+
+label {
+  color: white;
 }
 
 .form-error {
@@ -180,7 +188,7 @@ button:hover {
 
 /* MEDIA QUERIES */
 
-@media screen and (max-width: 1380px) {
+@media screen and (max-width: 1700px) {
   .hamburger {
     display: block;
     cursor: pointer;
