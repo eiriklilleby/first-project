@@ -1,5 +1,5 @@
-const url = "http://flowerpowerstore.eu/wp-json/wc/store/products";
-const specificUrl = "http://flowerpowerstore.eu/wp-json/wc/store/products/146";
+const url = "https://flowerpowerstore.eu/wp-json/wc/store/products";
+const specificUrl = "https://flowerpowerstore.eu/wp-json/wc/store/products/146";
 const gameImage = document.querySelector(".games-container");
 const mainImage = document.querySelector(".highlightedimg");
 
