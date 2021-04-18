@@ -6,7 +6,7 @@ const id = params.get("id");
 
 async function makeApiCall() {
   try {
-    const response = await fetch("http://flowerpowerstore.eu/wp-json/wc/store/products/" + id);
+    const response = await fetch("https://flowerpowerstore.eu/wp-json/wc/store/products/" + id);
 
     const json = await response.json();
     console.log(json);
