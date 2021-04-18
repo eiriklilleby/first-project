@@ -199,10 +199,10 @@ label {
   align-items: center;
 }
 
-.highlighted-games-img {
+.highlightedimg {
   width: 100%;
   height: 60vh;
-  background-image: url(/images/Games/Cyberpunk.jpg);
+  /* background-image: url(/images/Games/Cyberpunk.jpg); */
   background-repeat: no-repeat;
   background-attachment: fixed;
   background-size: cover;
@@ -212,8 +212,20 @@ label {
   justify-content: flex-end;
 }
 
+highlighted-games-img img {
+  height: 100%;
+  width: 100%;
+  object-fit: cover;
+}
+
 .highlighted-game-text h2 a {
   font-size: 2rem;
+  transition: ease-in-out 0.3s;
+}
+
+.highlighted-game-text h2 a:hover {
+  color: yellow;
+  font-weight: 600;
 }
 
 .line {
@@ -316,7 +328,7 @@ label {
 }
 
 .games-container {
-  min-height: 115rem;
+  min-height: 75rem;
   min-width: 95%;
   display: flex;
   flex-wrap: wrap;
@@ -344,6 +356,7 @@ label {
   background: linear-gradient(#1e2a2e, #000000);
   height: 5rem;
   display: flex;
+  padding-left: 2rem;
   align-items: center;
 }
 
@@ -368,7 +381,7 @@ label {
 .current-featured {
   color: #00f93a;
   font-weight: bold;
-  font-size: 1.5rem;
+  font-size: 1.8rem;
 }
 
 .buttonbox {
@@ -567,6 +580,38 @@ footer {
   display: flex;
   justify-content: center;
   margin-top: 10rem;
+}
+
+.message {
+  padding: 1rem;
+  border: 1px solid grey;
+  color: grey;
+}
+
+.error {
+  color: red;
+  border: solid 2px red;
+  padding: 1rem;
+  background: rgba(255, 0, 0, 0.1);
+  height: 20%;
+}
+
+.loader {
+  border: 16px solid #c0c0c0;
+  border-top: 16px solid rgb(8, 228, 8);
+  border-radius: 50%;
+  width: 120px;
+  height: 120px;
+  animation: spin 2s linear infinite;
+}
+
+@keyframes spin {
+  0% {
+    transform: rotate(0deg);
+  }
+  100% {
+    transform: rotate(360deg);
+  }
 }
 
 /* MEDIA QUERIES */
