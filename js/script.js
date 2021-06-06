@@ -1,6 +1,7 @@
 const url = "https://flowerpowerstore.eu/wp-json/wc/store/products";
 const specificUrl = "https://flowerpowerstore.eu/wp-json/wc/store/products/146";
 const gameImage = document.querySelector(".games-container");
+const bestContainer = document.querySelector(".container-best");
 const mainImage = document.querySelector(".highlightedimg");
 
 async function makeApiCall() {
@@ -8,9 +9,13 @@ async function makeApiCall() {
     const response = await fetch(url);
     const json = await response.json();
 
-    gameImage.innerHTML = "";
-
     console.log(json);
+
+    gameImage.innerHTML = "";
+    bestContainer.innerHTML = "";
+
+    let count = 1;
+
     json.forEach((games) => {
       gameImage.innerHTML += `
       <div class="container-games">
@@ -20,7 +25,6 @@ async function makeApiCall() {
       </a>
       </div>
       <div class="box-info">
-     
       <div class="spanbox">
       <span class="prev-featured">${games.prices.regular_price}£</span>
       <span class="current-featured">${games.prices.price}£</span>
@@ -35,6 +39,30 @@ async function makeApiCall() {
       </div>
       </div>
                                                                 `;
+
+      bestContainer.innerHTML += `
+            <div class="container-long">
+              <div class="small-box-best">
+                <p>${count++}</p>
+              </div>
+              <div class="small-game-box">
+                <a href="details.html?id=${games.id}">
+                  <img src="${games.images[0].src}" alt="The outer worlds" />
+                </a>
+              </div>
+              <div class="container-game-info">
+                <div class="game-name">
+                  <a href="details.html?id=${games.id}">
+                    <p>${games.name}</p>
+                  </a>
+                </div>
+                <div class="game-price">
+                  <span class="prev-featured">${games.prices.regular_price}£</span>
+                  <span class="current-featured">${games.prices.price}£</span>
+                </div>
+              </div>
+            </div>
+`;
     });
   } catch (error) {
     gameImage.innerHTML = displayError();
@@ -48,7 +76,6 @@ async function singleApiCall() {
   try {
     const response = await fetch(specificUrl);
     const json = await response.json();
-    console.log(json.images[0].src);
 
     mainImage.innerHTML = "";
 
@@ -86,3 +113,19 @@ async function singleApiCall() {
 }
 
 singleApiCall();
+
+// toggles a class when you scroll down to games.
+
+window.addEventListener("scroll", () => {
+  const gameSelect = document.querySelector(".gamenav");
+  const homeSelect = document.querySelector("#home");
+  const windowPosition = window.scrollY > 800;
+
+  if (window.scrollY < 800) {
+    homeSelect.classList.add("target");
+  } else {
+    homeSelect.classList.remove("target");
+  }
+
+  gameSelect.classList.toggle("target", windowPosition);
+});
