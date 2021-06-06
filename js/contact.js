@@ -13,25 +13,23 @@ function validateForm(event) {
     firstNameError.style.display = "none";
   } else {
     firstNameError.style.display = "block";
-    return false;
   }
 
   if (validateEmail(email.value) === true) {
     emailError.style.display = "none";
   } else {
     emailError.style.display = "block";
-    return false;
   }
 
   if (checkLength(subject.value, 9) === true) {
     subjectError.style.display = "none";
   } else {
     subjectError.style.display = "block";
-    return false;
   }
 
-  alert("Message has been sent successfully!");
-  return true;
+  if (checkLength(firstName.value, 0) && validateEmail(email.value) && checkLength(subject.value, 9)) {
+    alert("Message has been sent successfully!");
+  }
 }
 
 form.addEventListener("submit", validateForm);

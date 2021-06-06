@@ -198,6 +198,7 @@ button:hover {
   #logo {
     width: 100px;
     margin: auto;
+    margin-right: 0.5rem;
   }
 
   .menu {
@@ -220,6 +221,7 @@ button:hover {
   }
   .nav-icon {
     margin: 0.5rem 0rem;
+    margin-right: 0.5rem;
   }
   .search input[type="text"] {
     height: 25px;

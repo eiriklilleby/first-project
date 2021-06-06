@@ -21,47 +21,49 @@ function validateForm(event) {
     addressError.style.display = "none";
   } else {
     addressError.style.display = "block";
-    return false;
   }
 
   if (checkLength(city.value, 2) === true) {
     cityError.style.display = "none";
   } else {
     cityError.style.display = "block";
-    return false;
   }
   if (checkLength(zip.value, 3) === true) {
     zipError.style.display = "none";
   } else {
     zipError.style.display = "block";
-    return false;
   }
   if (checkLength(name.value, 0) === true) {
     nameError.style.display = "none";
   } else {
     nameError.style.display = "block";
-    return false;
   }
   if (checkLength(card.value, 15) === true) {
     cardError.style.display = "none";
   } else {
     cardError.style.display = "block";
-    return false;
   }
   if (checkLength(date.value, 4) === true) {
     dateError.style.display = "none";
   } else {
     dateError.style.display = "block";
-    return false;
   }
   if (checkLength(cvv.value, 2) === true) {
     cvvError.style.display = "none";
   } else {
     cvvError.style.display = "block";
-    return false;
   }
-  window.location.pathname = "checkoutsucess.html";
-  return true;
+  if (
+    checkLength(address.value, 4) &&
+    checkLength(city.value, 2) &&
+    checkLength(zip.value, 3) &&
+    checkLength(name.value, 0) &&
+    checkLength(card.value, 15) &&
+    checkLength(date.value, 4) &&
+    checkLength(cvv.value, 2)
+  ) {
+    window.location.pathname = "checkoutsucess.html";
+  }
 }
 
 form.addEventListener("submit", validateForm);
